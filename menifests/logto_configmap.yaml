@@ -1,0 +1,9 @@
+# apiVersion: v1
+# kind: ConfigMap
+# metadata:
+#   name: logto-env
+#   namespace: llm
+#   labels:
+#     app: logto
+# data:
+#   React_App_API_URL: https://be.civilbrain.ai  ##backend url

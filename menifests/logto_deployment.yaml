@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logto
+  namespace: llm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: logto
+  template:
+    metadata:
+      labels:
+        app: logto
+    spec:
+      containers:
+        - name: logto
+          image: asia-south1-docker.pkg.dev/eternal-autumn-410909/llm-infra-repo/logto:latest
+          imagePullPolicy: Always
+          # envFrom:
+          #   - configMapRef:
+          #       name: logto-env
+          ports:
+            - containerPort: 3001
