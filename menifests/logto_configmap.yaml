@@ -1,9 +1,15 @@
-# apiVersion: v1
-# kind: ConfigMap
-# metadata:
-#   name: logto-env
-#   namespace: llm
-#   labels:
-#     app: logto
-# data:
-#   React_App_API_URL: https://be.civilbrain.ai  ##backend url
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logto-env
+  namespace: llm
+  labels:
+    app: logto
+data:
+  DB_URL: postgresql://postgres:"%`HpRnrIbvj6\Z'P"@35.225.99.20:5432/logto
+  DB_HOST: "35.225.99.20"
+  DB_PORT: "5432"
+  DB_USER: postgres
+  DB_PASSWORD: "%`HpRnrIbvj6\Z'P"
+  DB_NAME: logto
+  DB_TYPE: postgresql
