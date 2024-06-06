@@ -7,8 +7,8 @@ metadata:
     app: logto
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "logto"
-    ingress.gcp.kubernetes.io/pre-shared-cert: "civilbrain-bundle"
-    networking.gke.io/managed-certificates: "civilbrain-bundle"
+    ingress.gcp.kubernetes.io/pre-shared-cert: "llm-bundle"
+    networking.gke.io/managed-certificates: "llm-bundle"
 spec:
   rules:
     - http:
