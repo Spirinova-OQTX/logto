@@ -10,6 +10,6 @@ data:
   DB_HOST: "35.225.99.20"
   DB_PORT: "5432"
   DB_USER: postgres
-  DB_PASSWORD: "jAJK*s5R-6t*'$q7"
+  DB_PASSWORD: "Ch@ngeme@1234"
   DB_NAME: logto
   DB_TYPE: postgresql
