@@ -6,7 +6,7 @@ metadata:
   labels:
     app: logto
 data:
-  DB_URL: postgres://postgres:"Cha^geme#1234"@35.225.99.20:5432/logto
+  DB_URL: postgres://postgres:Cha^geme%231234@35.225.99.20:5432/logto
   DB_HOST: "35.225.99.20"
   DB_PORT: "5432"
   DB_USER: postgres
