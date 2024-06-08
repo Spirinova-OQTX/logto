@@ -41,6 +41,7 @@ RUN rm -rf .scripts .parcel-cache pnpm-*.yaml packages/cloud
 FROM node:20-alpine as app
 WORKDIR /etc/logto
 COPY --from=builder /etc/logto .
+RUN npm install -g @logto/cli
 EXPOSE 3001
-ENTRYPOINT ["npm", "run", "alteration deploy"]
-CMD ["start"]
+ENTRYPOINT ["npm", "run"]
+CMD ["logto", "db", "alteration", "deploy", "1.2.0", "start"]
