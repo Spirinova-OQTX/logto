@@ -14,4 +14,6 @@ data:
   DB_NAME: logto
   DB_TYPE: postgresql
   ENDPOINT: http://0.0.0.0:3001
+  PORT: 3001
   ADMIN_ENDPOINT: http://0.0.0.0:3002
+  ADMIN_PORT: 3002
