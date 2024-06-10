@@ -22,3 +22,4 @@ spec:
                 name: logto-env
           ports:
             - containerPort: 3002
+            - containerPort: 3001
