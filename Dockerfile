@@ -44,4 +44,4 @@ COPY --from=builder /etc/logto .
 RUN npm install -g @logto/cli
 EXPOSE 3001
 ENTRYPOINT ["npm", "run"]
-CMD ["logto", "db", "alteration", "deploy", "1.2.0", "start"]
+CMD ["start", "--host 0.0.0.0"]

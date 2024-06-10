@@ -15,10 +15,10 @@ spec:
     spec:
       containers:
         - name: logto
-          image: asia-south1-docker.pkg.dev/eternal-autumn-410909/llm-infra-repo/logto:latest
+          image: ghcr.io/logto-io/logto
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
                 name: logto-env
           ports:
-            - containerPort: 3001
+            - containerPort: 3002
